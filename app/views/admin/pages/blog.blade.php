@@ -15,7 +15,7 @@
     <link rel="icon" href="img/es_logo.png">
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="{{URL::to('js/vendor/bootstrap/css/bootstrap.min.css')}}"/>
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css"/>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css"/>    
     <link rel="stylesheet" href="{{URL::to('js/vendor/metisMenu/metisMenu.min.css')}}"/>
     <link rel="stylesheet" href="{{URL::to('js/dist/css/sb-admin-2.css')}}"/>
 
@@ -132,23 +132,21 @@
         <div class="container-fluid">
             <form  role="form" method="POST" action="{{ url('/add/blog') }}">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-10">
                     <div class="form-group">
                         <label for="exampleInputEmail1">Post Title</label>
                         <input type="title" class="form-control" name="title" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Post Title">
                         <small id="emailHelp" class="form-text text-muted"></small>
                     </div>
                 </div>
-                <div class="col-lg-12">
-                    <div class="col-md-12">
+                    <div class="col-md-10">
                         <div class="form-group">
                             <label for="exampleTextarea">Content</label>
                             <textarea class="form-control" name="content" id="editor1" rows="8"></textarea>
                         </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <button type="submit" class="btn btn-primary">Save</button>
+                <div class="col-md-12 save_content_btn">
+                    <button type="submit" class="btn btn-primary"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;Save</button>
                 </div>
                 <div class="col-md-8 blog_input_btn">
                     <label class="btn btn-default btn-file">
@@ -162,7 +160,7 @@
             </div>
             </form>
         </div>
-        <div class="col-md-12">
+        <div class="col-md-10 table_section">
             <table id="example" class="display" cellspacing="0" width="100%">
                 <thead>
                 <tr>
@@ -188,8 +186,8 @@
                         <td>{{($blog->created_at)}}</td>
                         <td>{{($blog->updated_at)}}</td>
 
-                        <td> <a href="{{ URL::to('show/blog/' . $blog->id) }}"> <button >Edit</button></a>
-                            <a href="{{ URL::to('delete/blog/' . $blog->id) }}"> <button >Delete</button></a>
+                        <td> <a href="{{ URL::to('show/blog/' . $blog->id) }}"> <button class="edit_btn_ta"><i class="fa fa-pencil" aria-hidden="true"></i>&nbsp;Edit</button></a>
+                            <a href="{{ URL::to('delete/blog/' . $blog->id) }}"> <button class="delete_btn_ta"><i class="fa fa-trash " aria-hidden="true"></i>&nbsp;Delete</button></a>
                         </td>
                     </tr>
                 @endforeach
@@ -213,7 +211,7 @@
             <div class="row">
 
                 <div class="col-md-12 blog_page_content" style="text-align: center;">
-                    <img src="../img/big_logo-01.png" style="width: 450px; margin: auto !important; padding: 50px 0px;" class="img-responsive">
+                    <!-- <img src="../img/big_logo-01.png" style="width: 450px; margin: auto !important; padding: 50px 0px;" class="img-responsive"> -->
                 </div>
             </div>
         </div>
