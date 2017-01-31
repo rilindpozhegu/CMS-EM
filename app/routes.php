@@ -29,7 +29,12 @@ Route::group(array('before' => 'auth'), function()
 
     Route::get('/dashboard', 'BlogController@allDashboard');
     Route::get('/blog', 'BlogController@blogView');
-    Route::get('/cover', 'CoverController@index');  
+
+
+    Route::get('/cover', 'CoverController@index'); 
+    Route::post('/cover/{string}', 'CoverController@store');
+    Route::get('/cover/delete/{id}', 'CoverController@destroy');
+
 
 
     // User Root

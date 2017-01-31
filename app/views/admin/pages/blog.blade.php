@@ -89,7 +89,7 @@
             <div class="sidebar-nav navbar-collapse">
                 <ul class="nav" id="side-menu">
                     <li>
-                        <a href="blog-page"><i class="fa fa-clipboard"></i> Blog Posts</a>
+                        <a href="blog"><i class="fa fa-clipboard"></i> Blog Posts</a>
                     </li>
                     <li>
                         <a href="cover"><i class="fa fa-picture-o"></i> Cover Image</a>
