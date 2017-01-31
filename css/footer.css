@@ -1,0 +1,89 @@
+/*Fonts*/
+@font-face {
+  font-family: 'OpenSans-Light';
+  src: url('../fonts/OpenSans-Light.ttf');
+ }
+
+@font-face {
+  font-family: 'HelveticaLTStd-Bold';
+  src: url('../fonts/HelveticaLTStd-Bold.otf');
+ }
+
+ @font-face {
+  font-family: 'HelveticaLTStd-Light';
+  src: url('../fonts/HelveticaLTStd-Light.otf');
+ }
+
+ @font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('../fonts/Montserrat-Bold.ttf');
+ }
+
+ @font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('../fonts/Montserrat-Regular.ttf');
+ }
+
+
+.footer-section {
+	background-color: #1b2830;
+	padding: 35px 0px 35px;
+	color: white;
+}
+.footer-section p {
+	font-family: 'HelveticaLTStd-Light';
+}
+
+.footer-section i {
+	color: white;
+	padding: 0px 10px;
+	font-size: 15px;
+	text-align: right;
+}
+
+.hover_btn:hover {
+	border: solid 2px #1b2830 !important;
+	background: white !important;
+	color: #324099;
+}
+
+
+.navigation-footer {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-footer li {
+    display: inline;
+}
+
+.navigation-footer a {
+	color: white;
+	padding: 0px 10px;
+	font-family: "Montserrat-Regular";
+	font-size: 11px;
+}
+.navigation-footer a:hover {
+	text-decoration: none;
+}
+
+.footer-social-section {
+	text-align: right;
+}
+
+
+
+
+
+@media only screen and (max-width: 844px) {
+    .mobile-d-n {
+        display: none;
+    }
+ 	.footer-section p{
+ 		text-align: center;
+ 	}   
+ 	.footer-social-section {
+ 		text-align: center;
+ 	}
+}

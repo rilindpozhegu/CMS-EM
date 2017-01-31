@@ -1,0 +1,33 @@
+/*=======================*/
+/*==  	-EMIRATES-     ==*/
+/*==    GRAPHIC.COM    ==*/
+/*=======================*/
+
+
+/*--------------------*/
+/*		  Fonts       */
+/*--------------------*/
+
+
+@font-face {
+  font-family: 'Montserrat-light';
+  src: url('../../fonts/Montserrat-Light.otf');
+ }
+
+
+
+
+/*--------------------*/
+/*		  Main        */
+/*--------------------*/
+
+.cover-wrapper {
+	padding: 40px 30px !important;
+	font-family: 'Montserrat-light';
+	text-align: center;
+}
+
+
+.cover-wrapper p {
+	color: #b3b3b3;
+}

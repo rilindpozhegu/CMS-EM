@@ -1,0 +1,129 @@
+/*Fonts*/
+@font-face {
+  font-family: 'OpenSans-Light';
+  src: url('../fonts/OpenSans-Light.ttf');
+ }
+
+@font-face {
+  font-family: 'HelveticaLTStd-Bold';
+  src: url('../fonts/HelveticaLTStd-Bold.otf');
+ }
+
+ @font-face {
+  font-family: 'HelveticaLTStd-Light';
+  src: url('../fonts/HelveticaLTStd-Light.otf');
+ }
+
+ @font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('../fonts/Montserrat-Bold.ttf');
+ }
+
+ @font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('../fonts/Montserrat-Regular.ttf');
+ }
+
+body {
+  font-family: 'HelveticaLTStd-Light';
+}
+.no-padding {
+    padding: 0px;
+}
+
+/*==========================================*/
+
+/*
+** Header
+*/
+.header-section {
+  background-image: url('../../../../../public/assets/img/backgorund/contact-top-bg-01.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 7%;
+  padding: 70px 0px;
+}
+.header_panel_section {
+  padding: 30px;
+  /*background: rgba(35, 53, 136, 0.55);*/
+}
+.header_panel_section h4 {
+  color: white;
+  font-family: 'Montserrat-Bold';
+  font-size: 40px;
+}
+.header_panel_section span {
+  color: white;
+  font-size: 35px;
+}
+.header_panel_section p {
+  padding: 10px 0px;
+  color: rgba(255, 255, 255, 0.69);
+  font-size: 20px;
+}
+
+.header-section button {
+  color: white;
+  background-color: #d4145a;
+  border: none;
+  width: 110px;
+  height: 30px;
+  font-size: 10px;
+  font-family:"Montserrat-Regular";
+  border-radius: 5px;
+}
+
+/*first seciton news*/
+.medium-panel {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 6px;
+  padding: 20px;
+  height: 280px;
+}
+.medium-panel h5 {
+  color: #324099;
+  font-size: 15px;
+  font-family: "Montserrat-Regular";
+}
+
+.medium-panel p {
+  color: #808285;
+  font-size: 15px;
+  font-family: "HelveticaLTStd-Light";
+}
+/*Desktop Version*/
+
+@media only screen and (min-width: 844px) {
+    .desktop-d-n {
+        display: none;
+    }
+}
+
+/*Mobile Version*/
+
+@media only screen and (max-width: 844px) {
+    .mobile-d-n {
+        display: none;
+    }
+    .home-bigpanel span {
+      font-size: 25px;
+    }
+    .home-bigpanel h1 {
+      margin: 0px 0px;
+      font-size: 30px;
+    }
+    .home-bigpanel p {
+      font-family: "HelveticaLTStd-Light";
+      color: #808285;
+      font-size: 12px;
+    }
+    .panel-homepage p {
+      font-family: "HelveticaLTStd-Light";
+      color: #808285;
+      font-size: 12px;
+    }
+    .header_panel_section p {
+      font-size: 17px;
+    }
+}
