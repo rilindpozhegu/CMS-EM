@@ -141,7 +141,7 @@
                     <label class="btn btn-default btn-file">
                         <i class="fa fa-image" aria-hidden="true"></i>&nbsp; Edit Cover <input type="file" name="image" style="display: none;">
                     </label>
-                    <button class="edit_btn"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                    <button class="btn btn-success"><i class="fa fa-floppy-o" aria-hidden="true"></i></button>
                     {{Form::close()}}
 
                     <div class="image_section">
@@ -164,7 +164,7 @@
                     <label class="btn btn-default btn-file">
                         <i class="fa fa-image" aria-hidden="true"></i>&nbsp; Edit Logo <input type="file" name="image" style="display: none;">
                     </label>
-                    <button class="delete_btn"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                    <button class="btn btn-success"><i class="fa fa-floppy-o" aria-hidden="true"></i></button>
                     {{Form::close()}}
 
                     <div class="image_section">
@@ -187,7 +187,7 @@
                     <label class="btn btn-default btn-file">
                         <i class="fa fa-image" aria-hidden="true"></i>&nbsp; Edit Flaticon <input type="file" name="image" style="display: none;">
                     </label>
-                    <button class="delete_btn"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                    <button class="btn btn-success"><i class="fa fa-floppy-o" aria-hidden="true"></i></button>
                     {{Form::close()}}
 
                     <div class="image_section">

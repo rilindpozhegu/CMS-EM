@@ -21,6 +21,10 @@ Route::get('logout', ['as' => 'logout', 'uses' => 'UserController@logout']);
 
 Route::get('/seed', 'UserController@seedUser');
 
+Route::get('/gallery', function () {
+    return \View::make('admin.pages.gallery');
+});
+
 
 
 
